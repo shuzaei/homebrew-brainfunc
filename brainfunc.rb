@@ -13,7 +13,7 @@ class Brainfunc < Formula
   homepage "https://www.github.com/shuzaei/brainfunc"
   url "https://www.github.com/shuzaei/brainfunc/archive/main.tar.gz"
   version "1.0.3-0"
-  sha256 "2bb47410cd04d93113bbb1b21c0bb5fcff57441feae69e6445105e2114bf37a8"
+  sha256 "062654b1767f2a179dd21ec9b06dcb179b38aca85e0b592d3d43499e195573e2"
   license "GNU GPL v3.0"
 
   # depends_on "cmake" => :build
