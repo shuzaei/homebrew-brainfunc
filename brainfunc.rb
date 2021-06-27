@@ -11,9 +11,9 @@
 class Brainfunc < Formula
   desc "A programming language like brainf*ck."
   homepage "https://www.github.com/shuzaei/brainfunc"
-  url "https://github.com/shuzaei/brainfunc/releases/download/1.0.3-2/homebrew-package.tar.gz"
-  version "1.0.3-2"
-  sha256 "f2857c5bcbca024c45adff01cc60806b6c1f962c2d139e31ed6a0149dea883a6"
+  url "https://github.com/shuzaei/brainfunc/releases/download/1.0.4-0/homebrew-package.tar.gz"
+  version "1.0.4-0"
+  sha256 "27412f1bf3d037327de9d5a301ca4dd3beadcd256cdb4c5fd5082e9c153b242c"
   license "GNU GPL v3.0"
 
   def install
