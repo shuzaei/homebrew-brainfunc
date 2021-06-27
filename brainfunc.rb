@@ -21,7 +21,7 @@ class Brainfunc < Formula
     # Remove unrecognized options if warned by configure
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
     bin.install "bcc.sh" => "bcc"
-    system "./install"
+    system "./install.sh"
   end
 
   test do
