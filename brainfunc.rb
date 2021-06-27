@@ -11,12 +11,13 @@
 class Brainfunc < Formula
   desc "A programming language like brainf*ck."
   homepage "https://www.github.com/shuzaei/brainfunc"
-  url "https://github.com/shuzaei/brainfunc/releases/download/1.0.3-1/homebrew-package.tar.gz"
-  version "1.0.3-1"
-  sha256 "99b8458aef577dc08654bcd46895b21f64986a4d018ba9139ef293a3d50f0707"
+  url "https://github.com/shuzaei/brainfunc/releases/download/1.0.3-2/homebrew-package.tar.gz"
+  version "1.0.3-2"
+  sha256 "f2857c5bcbca024c45adff01cc60806b6c1f962c2d139e31ed6a0149dea883a6"
   license "GNU GPL v3.0"
 
-  # depends_on "cmake" => :build
+  depends_on "mktemp"
+  depends_on "cc"
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
