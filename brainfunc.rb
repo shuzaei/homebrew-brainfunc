@@ -16,9 +16,6 @@ class Brainfunc < Formula
   sha256 "f2857c5bcbca024c45adff01cc60806b6c1f962c2d139e31ed6a0149dea883a6"
   license "GNU GPL v3.0"
 
-  depends_on "mktemp"
-  depends_on "cc"
-
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
