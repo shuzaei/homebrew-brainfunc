@@ -22,7 +22,7 @@ class Brainfunc < Formula
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
-    system "./bcc/install.sh"
+    bin.install "bcc/install.sh"
   end
 
   test do
