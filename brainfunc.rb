@@ -11,9 +11,9 @@
 class Brainfunc < Formula
   desc "A programming language like brainf*ck."
   homepage "https://www.github.com/shuzaei/brainfunc"
-  url "https://www.github.com/shuzaei/brainfunc/archive/main.tar.gz"
-  version "1.0.3-0"
-  sha256 "062654b1767f2a179dd21ec9b06dcb179b38aca85e0b592d3d43499e195573e2"
+  url "https://github.com/shuzaei/brainfunc/releases/download/1.0.3-1/homebrew-package.tar.gz"
+  version "1.0.3-1"
+  sha256 "99b8458aef577dc08654bcd46895b21f64986a4d018ba9139ef293a3d50f0707"
   license "GNU GPL v3.0"
 
   # depends_on "cmake" => :build
@@ -22,7 +22,7 @@ class Brainfunc < Formula
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
-    bin.install "bcc/install.sh"
+    bin.install "install.sh"
   end
 
   test do
