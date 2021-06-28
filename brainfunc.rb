@@ -11,9 +11,9 @@
 class Brainfunc < Formula
   desc "A programming language like brainf*ck."
   homepage "https://www.github.com/shuzaei/brainfunc"
-  url "https://github.com/shuzaei/brainfunc/releases/download/1.0.4-2/homebrew-package.tar.gz"
-  version "1.0.4-2"
-  sha256 "50341d9b22beff0ea03a594479da6af068b2571a43562f7c859ebda31509bea7"
+  url "https://github.com/shuzaei/brainfunc/releases/download/1.0.5-0/homebrew-package.tar.gz"
+  version "1.0.5-0"
+  sha256 "8860f48f44db321563293b8894d5926f9b15751e780e63392afbaccdaf8ac634"
   license "GNU GPL v3.0"
 
   def install
@@ -21,7 +21,8 @@ class Brainfunc < Formula
     # Remove unrecognized options if warned by configure
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
     bin.install "bcc.sh" => "bcc"
-    (prefix/"lib").install "bc2c.c"
+    system "cc", "-o", "bc2c", "bc2c.c"
+    bin.install "bc2c"
   end
 
   test do
